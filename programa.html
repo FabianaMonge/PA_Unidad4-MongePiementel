@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Licenciatura en Estudios Sociales Digitales - Facultad de Ciencias Sociales"
+    />
+    <title>Programa Académico | Facultad de Ciencias Sociales</title>
+
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles1.css" />
+
+    <!-- Meta tags para accesibilidad -->
+    <meta name="theme-color" content="#1e88e5" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+  </head>
+  <body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link waves-effect waves-light btn blue sr-only">Saltar al contenido principal</a>
+    
+    <!-- Barra de navegación -->
+    <header>
+      <nav
+        class="nav-extended blue darken-1"
+        role="navigation"
+        aria-label="Navegación principal"
+      >
+        <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo">
+            <i class="material-icons" aria-hidden="true">school</i>
+            Ciencias Sociales
+          </a>
+          <a
+            href="#"
+            data-target="mobile-menu"
+            class="sidenav-trigger"
+            aria-label="Menú móvil"
+          >
+            <i class="material-icons" aria-hidden="true">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+              <a href="programa.html" aria-current="page">Programa Académico</a>
+            </li>
+            <li><a href="admision.html">Admisión</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Menú móvil -->
+      <ul id="mobile-menu" class="sidenav" role="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="programa.html" aria-current="page">Programa Académico</a>
+        </li>
+        <li><a href="admision.html">Admisión</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content" role="main">
+      <!-- Hero section con imagen de fondo -->
+      <div
+        class="hero-programa valign-wrapper"
+        aria-label="Estudiantes trabajando en proyectos digitales"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m8" data-aos="fade-right">
+              <h1 id="programa-title" class="white-text">
+                Licenciatura en Estudios Sociales Digitales
+              </h1>
+              <p class="flow-text white-text">
+                Un programa innovador para entender y transformar la sociedad
+                del siglo XXI
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de pestañas interactivas -->
+      <section class="section white" aria-labelledby="programa-tabs-title">
+        <div class="container">
+          <h2 id="programa-tabs-title" class="sr-only">
+            Contenido del programa académico
+          </h2>
+
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs tabs-fixed-width" role="tablist">
+                <li class="tab col s4" role="presentation">
+                  <a
+                    href="#plan-estudios"
+                    role="tab"
+                    id="tab-plan-estudios"
+                    aria-controls="plan-estudios"
+                    class="active"
+                    data-aos="fade-up"
+                  >
+                    <i class="material-icons" aria-hidden="true">list_alt</i>
+                    Plan de Estudios
+                  </a>
+                </li>
+                <li class="tab col s4" role="presentation">
+                  <a
+                    href="#perfil-egreso"
+                    role="tab"
+                    id="tab-perfil-egreso"
+                    aria-controls="perfil-egreso"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <i class="material-icons" aria-hidden="true">school</i>
+                    Perfil de Egreso
+                  </a>
+                </li>
+                <li class="tab col s4" role="presentation">
+                  <a
+                    href="#profesores"
+                    role="tab"
+                    id="tab-profesores"
+                    aria-controls="profesores"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <i class="material-icons" aria-hidden="true">people</i>
+                    Cuerpo Docente
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contenido de pestañas -->
+            <div
+              id="plan-estudios"
+              role="tabpanel"
+              aria-labelledby="tab-plan-estudios"
+              class="col s12"
+              data-aos="fade-in"
+            >
+              <div class="section">
+                <h2 class="center-align">Plan de Estudios</h2>
+                <p class="center-align flow-text">
+                  Nuestro programa de 8 semestres combina teoría y práctica para
+                  formar profesionales integrales
+                </p>
+
+                <!-- Acordeón de semestres -->
+                <ul
+                  class="collapsible expandable"
+                  aria-label="Plan de estudios por semestre"
+                >
+                  <li data-aos="fade-up">
+                    <div class="collapsible-header" tabindex="0">
+                      <i class="material-icons">looks_one</i>
+                      Primer Semestre
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="browser-default">
+                        <li>Teoría Social Clásica</li>
+                        <li>Introducción a los Estudios Digitales</li>
+                        <li>Metodología de la Investigación I</li>
+                        <li>Estadística Descriptiva</li>
+                        <li>Taller de Expresión Académica</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li data-aos="fade-up">
+                    <div class="collapsible-header" tabindex="0">
+                      <i class="material-icons">looks_two</i>
+                      Segundo Semestre
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="browser-default">
+                        <li>Teoría Social Contemporánea</li>
+                        <li>Cultura Digital</li>
+                        <li>Metodología de la Investigación II</li>
+                        <li>Estadística Inferencial</li>
+                        <li>Taller de Análisis de Datos</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li data-aos="fade-up">
+                    <div class="collapsible-header" tabindex="0">
+                      <i class="material-icons">looks_3</i>
+                      Tercer Semestre
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="browser-default">
+                        <li>Teoría de Redes Sociales</li>
+                        <li>Antropología Digital</li>
+                        <li>Métodos Cuantitativos Avanzados</li>
+                        <li>Ética Digital</li>
+                        <li>Taller de Visualización de Datos</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li data-aos="fade-up">
+                    <div class="collapsible-header" tabindex="0">
+                      <i class="material-icons">looks_4</i>
+                      Cuarto Semestre
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="browser-default">
+                        <li>Economía de Plataformas Digitales</li>
+                        <li>Métodos Cualitativos Digitales</li>
+                        <li>Psicología de las Redes Sociales</li>
+                        <li>Políticas Públicas Digitales</li>
+                        <li>Electiva I</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              id="perfil-egreso"
+              role="tabpanel"
+              aria-labelledby="tab-perfil-egreso"
+              class="col s12"
+              data-aos="fade-in"
+            >
+              <div class="section">
+                <h2 class="center-align">Perfil de Egreso</h2>
+                <p class="center-align flow-text">
+                  Nuestros egresados desarrollan competencias para enfrentar los
+                  retos de la sociedad digital
+                </p>
+
+                <div class="row">
+                  <div class="col s12 m6" data-aos="fade-right">
+                    <div class="card hoverable">
+                      <div class="card-content">
+                        <h3 class="skills-title">Habilidades Analíticas</h3>
+                        <ul class="browser-default">
+                          <li>
+                            Analizar fenómenos sociales en entornos digitales
+                          </li>
+                          <li>
+                            Interpretar grandes volúmenes de datos sociales
+                          </li>
+                          <li>Diseñar investigaciones sociales innovadoras</li>
+                          <li>Aplicar métodos cuantitativos y cualitativos</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6" data-aos="fade-left">
+                    <div class="card hoverable">
+                      <div class="card-content">
+                        <h3 class="skills-title">
+                          Habilidades Profesionales
+                        </h3>
+                        <ul class="browser-default">
+                          <li>Trabajar en equipos multidisciplinarios</li>
+                          <li>
+                            Comunicar hallazgos complejos a diversos públicos
+                          </li>
+                          <li>
+                            Diseñar intervenciones sociales basadas en evidencia
+                          </li>
+                          <li>
+                            Gestionar proyectos sociales con enfoque digital
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="profesores"
+              role="tabpanel"
+              aria-labelledby="tab-profesores"
+              class="col s12"
+              data-aos="fade-in"
+            >
+              <div class="section">
+                <h2 class="center-align">Nuestro Cuerpo Docente</h2>
+                <p class="center-align flow-text">
+                  Profesores con amplia experiencia académica y profesional
+                </p>
+
+                <!-- Filtros -->
+                <div class="row">
+                  <div class="col s12">
+                    <div class="chips-container center-align">
+                      <div class="chip filter-btn active" data-filter="all">Todos</div>
+                      <div class="chip filter-btn" data-filter="sociologia">Sociología</div>
+                      <div class="chip filter-btn" data-filter="datos">Ciencia de Datos</div>
+                      <div class="chip filter-btn" data-filter="humanidades">Humanidades</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lista de profesores -->
+                <div class="row">
+                  <!-- Profesor 1 -->
+                  <div class="col s12 m6 l4 profesor-card" data-category="sociologia" data-aos="fade-up">
+                    <div class="card hoverable">
+                      <div class="card-image waves-effect waves-light">
+                        <img src="img/profesores/ana-martinez.jpg" alt="Foto de la Dra. Ana Martínez" class="activator" loading="lazy">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator">Dra. Ana Martínez<i class="material-icons right">more_vert</i></span>
+                        <p class="teal-text">Sociología Digital</p>
+                        <div class="chip">PhD Universidad de Barcelona</div>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title">Biografía<i class="material-icons right">close</i></span>
+                        <p>Experta en transformaciones digitales con 12 años de experiencia investigando el impacto social de las tecnologías emergentes. Autora de 3 libros y más de 25 artículos científicos.</p>
+                        <div class="card-action">
+                          <a href="#" class="blue-text">Publicaciones</a>
+                          <a href="#" class="blue-text">Proyectos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Profesor 2 -->
+                  <div class="col s12 m6 l4 profesor-card" data-category="datos" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card hoverable">
+                      <div class="card-image waves-effect waves-light">
+                        <img src="img/profesores/carlos-rodriguez.jpg" alt="Foto del Dr. Carlos Rodríguez" class="activator" loading="lazy">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator">Dr. Carlos Rodríguez<i class="material-icons right">more_vert</i></span>
+                        <p class="teal-text">Análisis de Datos Sociales</p>
+                        <div class="chip">PhD MIT</div>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title">Biografía<i class="material-icons right">close</i></span>
+                        <p>Especialista en Big Data aplicado a ciencias sociales. Director del Laboratorio de Datos Sociales. Ha colaborado con la ONU y el Banco Mundial en proyectos de análisis predictivo.</p>
+                        <div class="card-action">
+                          <a href="#" class="blue-text">Publicaciones</a>
+                          <a href="#" class="blue-text">Proyectos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Profesor 3 -->
+                  <div class="col s12 m6 l4 profesor-card" data-category="humanidades" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card hoverable">
+                      <div class="card-image waves-effect waves-light">
+                        <img src="img/profesores/lucia-fernandez.jpg" alt="Foto de la Dra. Lucía Fernández" class="activator" loading="lazy">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator">Dra. Lucía Fernández<i class="material-icons right">more_vert</i></span>
+                        <p class="teal-text">Humanidades Digitales</p>
+                        <div class="chip">PhD Universidad Complutense</div>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title">Biografía<i class="material-icons right">close</i></span>
+                        <p>Pionera en estudios de humanidades digitales en Latinoamérica. Directora del Centro de Estudios Culturales Digitales. Ganadora del Premio Nacional de Investigación en Humanidades 2020.</p>
+                        <div class="card-action">
+                          <a href="#" class="blue-text">Publicaciones</a>
+                          <a href="#" class="blue-text">Proyectos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="center-align" data-aos="fade-up">
+                  <a href="#" class="btn waves-effect waves-light blue" aria-label="Conoce todo nuestro cuerpo docente">
+                    <i class="material-icons left" aria-hidden="true">people</i>
+                    Ver Todos los Profesores
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de testimonios de egresados -->
+      <section
+        class="section grey lighten-4"
+        aria-labelledby="testimonios-title"
+      >
+        <div class="container">
+          <h2 id="testimonios-title" class="center-align">
+            Nuestros Egresados
+          </h2>
+          <p class="center-align flow-text">
+            Conoce la experiencia de quienes han pasado por nuestro programa
+          </p>
+
+          <div class="row">
+            <div class="col s12 m4" data-aos="zoom-in">
+              <div class="card testimonio-card">
+                <div class="card-content">
+                  <div class="testimonio-header">
+                    <img
+                      src="img/egresados/maria-gonzalez.jpg"
+                      alt="Foto de María González"
+                      class="circle testimonio-foto"
+                      loading="lazy"
+                    />
+                    <div>
+                      <span class="card-title">María González</span>
+                      <p class="teal-text">Analista en ONG Internacional</p>
+                    </div>
+                  </div>
+                  <p>
+                    "El programa me dio las herramientas para entender cómo la
+                    tecnología transforma nuestras relaciones sociales y cómo
+                    podemos investigar estos cambios."
+                  </p>
+                  <div class="rating" aria-label="Calificación: 5 estrellas">
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card testimonio-card">
+                <div class="card-content">
+                  <div class="testimonio-header">
+                    <img
+                      src="img/egresados/luis-hernandez.jpg"
+                      alt="Foto de Luis Hernández"
+                      class="circle testimonio-foto"
+                      loading="lazy"
+                    />
+                    <div>
+                      <span class="card-title">Luis Hernández</span>
+                      <p class="teal-text">
+                        Consultor en Transformación Digital
+                      </p>
+                    </div>
+                  </div>
+                  <p>
+                    "La combinación de teoría social y habilidades digitales me
+                    permitió destacarme en el mercado laboral desde el primer
+                    día."
+                  </p>
+                  <div class="rating" aria-label="Calificación: 4 estrellas">
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons grey-text">star</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card testimonio-card">
+                <div class="card-content">
+                  <div class="testimonio-header">
+                    <img
+                      src="img/egresados/sofia-ramirez.jpg"
+                      alt="Foto de Sofía Ramírez"
+                      class="circle testimonio-foto"
+                      loading="lazy"
+                    />
+                    <div>
+                      <span class="card-title">Sofía Ramírez</span>
+                      <p class="teal-text">Investigadora en Universidad</p>
+                    </div>
+                  </div>
+                  <p>
+                    "El enfoque interdisciplinario del programa fue clave para
+                    mi desarrollo como investigadora en temas de sociedad y
+                    tecnología."
+                  </p>
+                  <div class="rating" aria-label="Calificación: 5 estrellas">
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                    <i class="material-icons yellow-text">star</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de llamado a acción -->
+      <section class="section blue darken-1" aria-labelledby="cta-title">
+        <div class="container center-align" data-aos="zoom-in">
+          <h2 id="cta-title" class="white-text">
+            ¿Listo para transformar la sociedad digital?
+          </h2>
+          <p class="flow-text white-text">
+            Inicia tu proceso de admisión hoy mismo
+          </p>
+          <a
+            href="admision.html"
+            class="btn-large waves-effect waves-light white blue-text"
+            aria-label="Ir a página de admisión"
+          >
+            Aplicar Ahora
+            <i class="material-icons right" aria-hidden="true">arrow_forward</i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="page-footer blue darken-2" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h3 class="white-text">Facultad de Ciencias Sociales</h3>
+            <p class="grey-text text-lighten-4">
+              Formando líderes para entender y transformar la sociedad digital.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://facebook.com"
+                aria-label="Facebook"
+                class="white-text"
+              >
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                aria-label="Twitter"
+                class="white-text"
+              >
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                aria-label="Instagram"
+                class="white-text"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                aria-label="YouTube"
+                class="white-text"
+              >
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h4 class="white-text">Enlaces</h4>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="programa.html"
+                  aria-current="page"
+                  >Programa Académico</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="admision.html"
+                  >Admisión</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2023 Facultad de Ciencias Sociales
+          <a class="grey-text text-lighten-4 right" href="#!"
+            >Políticas de privacidad</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scripts personalizados -->
+    <script src="scripts1.js"></script>
+  </body>
+</html>

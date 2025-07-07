@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuevo programa académico en la Facultad de Ciencias Sociales">
+    <title>Facultad de Ciencias Sociales | Nuevo Programa Académico</title>
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta tags para accesibilidad -->
+    <meta name="theme-color" content="#1e88e5">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link waves-effect waves-light btn blue sr-only">Saltar al contenido principal</a>
+    
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="nav-extended blue darken-1" role="navigation" aria-label="Navegación principal">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" aria-current="page">
+                    <i class="material-icons" aria-hidden="true">school</i>
+                    Ciencias Sociales
+                </a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger" aria-label="Menú móvil">
+                    <i class="material-icons" aria-hidden="true">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="programa.html">Programa Académico</a></li>
+                    <li><a href="admision.html">Admisión</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav-content container">
+                <span class="nav-title">Nuevo Programa en Estudios Sociales Digitales</span>
+                <a href="admision.html" class="btn-floating btn-large halfway-fab waves-effect waves-light red" aria-label="Aplicar ahora">
+                    <i class="material-icons" aria-hidden="true">edit</i>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Menú móvil -->
+        <ul id="mobile-menu" class="sidenav" role="menu">
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="programa.html">Programa Académico</a></li>
+            <li><a href="admision.html">Admisión</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content" role="main">
+        <!-- Carrusel con imágenes reales -->
+        <div class="carousel carousel-slider" aria-roledescription="carrusel" aria-label="Galería de imágenes de la facultad">
+            <div class="carousel-item blue white-text" href="#one!" role="group" aria-label="Slide 1 de 3">
+                <img src="img/estudiantes-birrete.avif" 
+                     alt="Estudiantes con birrete en ceremonia de graduación" 
+                     class="responsive-img carousel-bg"
+                     loading="lazy">
+                <div class="carousel-caption container">
+                    <h2 data-aos="fade-down">Transforma la Sociedad Digital</h2>
+                    <p class="white-text" data-aos="fade-up" data-aos-delay="200">Nuevo programa interdisciplinario para el siglo XXI</p>
+                </div>
+            </div>
+            <div class="carousel-item red white-text" href="#two!" role="group" aria-label="Slide 2 de 3">
+                <img src="img/profesores-aula.avif" 
+                     alt="Profesores enseñando en el aula universitaria" 
+                     class="responsive-img carousel-bg"
+                     loading="lazy">
+                <div class="carousel-caption container">
+                    <h2 data-aos="fade-down">Profesores de Excelencia</h2>
+                    <p class="white-text" data-aos="fade-up" data-aos-delay="200">Aprende de los mejores investigadores en ciencias sociales</p>
+                </div>
+            </div>
+            <div class="carousel-item green white-text" href="#three!" role="group" aria-label="Slide 3 de 3">
+                <img src="img/estudiantes-proyecto.avif" 
+                     alt="Estudiantes presentando un proyecto académico" 
+                     class="responsive-img carousel-bg"
+                     loading="lazy">
+                <div class="carousel-caption container">
+                    <h2 data-aos="fade-down">Enfoque Práctico</h2>
+                    <p class="white-text" data-aos="fade-up" data-aos-delay="200">Proyectos reales con impacto social</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de beneficios -->
+        <section class="section container" aria-labelledby="beneficios-title">
+            <h2 id="beneficios-title" class="center-align">¿Por qué elegir nuestro programa?</h2>
+            <div class="row">
+                <div class="col s12 m4" data-aos="fade-up">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-light waves-block">
+                            <img src="img/equipo-trabajando.jfif" 
+                                 alt="Equipo multidisciplinario trabajando en proyecto"
+                                 loading="lazy">
+                            <span class="card-title">Enfoque Multidisciplinario</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Combina sociología, antropología, ciencia de datos y humanidades digitales para entender la sociedad contemporánea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-light waves-block">
+                            <img src="img/reunion-trabajo.avif" 
+                                 alt="Personas en una reunión de trabajo colaborativo"
+                                 loading="lazy">
+                            <span class="card-title">Conexiones Laborales</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Alianzas con empresas tecnológicas, ONGs y organismos públicos para prácticas profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-light waves-block">
+                            <img src="img/intercambio-internacional.jpg" 
+                                 alt="Estudiantes en un intercambio internacional"
+                                 loading="lazy">
+                            <span class="card-title">Perspectiva Global</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Oportunidades de intercambio con universidades líderes en Europa y América Latina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de testimonios -->
+        <section class="section grey lighten-4" aria-labelledby="testimonios-title">
+            <div class="container">
+                <h2 id="testimonios-title" class="center-align">Testimonios</h2>
+                <div class="row">
+                    <div class="col s12 m6" data-aos="zoom-in">
+                        <div class="card testimonio-card">
+                            <div class="card-content">
+                                <div class="testimonio-header">
+                                    <img src="img/maria.jpg" 
+                                         alt="Foto de María González, estudiante" 
+                                         class="circle testimonio-foto"
+                                         loading="lazy">
+                                    <span class="card-title">María González, Estudiante</span>
+                                </div>
+                                <p>"Este programa me ha permitido entender cómo la tecnología está transformando nuestras relaciones sociales y me ha dado herramientas para investigar estos cambios."</p>
+                                <div class="rating" aria-label="Calificación: 5 estrellas">
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card testimonio-card">
+                            <div class="card-content">
+                                <div class="testimonio-header">
+                                    <img src="img/carlos.jpg" 
+                                         alt="Foto de Carlos Méndez, egresado" 
+                                         class="circle testimonio-foto"
+                                         loading="lazy">
+                                    <span class="card-title">Carlos Méndez, Egresado</span>
+                                </div>
+                                <p>"Gracias a las habilidades adquiridas, conseguí un trabajo como analista de datos sociales en una importante ONG internacional."</p>
+                                <div class="rating" aria-label="Calificación: 4 estrellas">
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons grey-text">star</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="section" aria-labelledby="contacto-title">
+            <div class="container">
+                <h2 id="contacto-title" class="center-align">¿Quieres más información?</h2>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <form id="contact-form" aria-label="Formulario de contacto">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix" aria-hidden="true">person</i>
+                                    <input id="nombre" type="text" class="validate" required aria-required="true">
+                                    <label for="nombre">Nombre completo</label>
+                                    <span class="helper-text" data-error="Por favor ingresa tu nombre"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix" aria-hidden="true">email</i>
+                                    <input id="email" type="email" class="validate" required aria-required="true">
+                                    <label for="email">Correo electrónico</label>
+                                    <span class="helper-text" data-error="Por favor ingresa un correo válido"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix" aria-hidden="true">message</i>
+                                    <textarea id="mensaje" class="materialize-textarea" required aria-required="true"></textarea>
+                                    <label for="mensaje">Tu mensaje</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 center-align">
+                                    <button class="btn waves-effect waves-light blue" type="submit" aria-label="Enviar mensaje">
+                                        Enviar
+                                        <i class="material-icons right" aria-hidden="true">send</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title" tabindex="0">Información de contacto</span>
+                                <address>
+                                    <p><i class="material-icons left" aria-hidden="true">place</i> Av. Universidad 1234, Ciudad Universitaria</p>
+                                    <p><i class="material-icons left" aria-hidden="true">phone</i> <a href="tel:+525512345678">915 545 525</a></p>
+                                    <p><i class="material-icons left" aria-hidden="true">email</i> <a href="mailto:info@sociales.edu.mx">info@sociales.edu.mx</a></p>
+                                    <p><i class="material-icons left" aria-hidden="true">access_time</i> Lunes a Viernes: 9:00 - 18:00 hrs</p>
+                                </address>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888538379889!2d-99.1787259241643!3d19.41904048187699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1689876321435!5m2!1ses-419!2smx" 
+                                            width="100%" 
+                                            height="300" 
+                                            style="border:0;" 
+                                            allowfullscreen="" 
+                                            loading="lazy" 
+                                            aria-label="Mapa de ubicación de la facultad"
+                                            title="Ubicación de la Facultad de Ciencias Sociales"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="page-footer blue darken-2" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h3 class="white-text">Facultad de Ciencias Sociales</h3>
+                    <p class="grey-text text-lighten-4">Formando líderes para entender y transformar la sociedad digital.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" aria-label="Facebook" class="white-text">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com" aria-label="Twitter" class="white-text">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com" aria-label="Instagram" class="white-text">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com" aria-label="YouTube" class="white-text">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h4 class="white-text">Enlaces</h4>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="programa.html">Programa Académico</a></li>
+                        <li><a class="grey-text text-lighten-3" href="admision.html">Admisión</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Facultad de Ciencias Sociales
+                <a class="grey-text text-lighten-4 right" href="#!">Políticas de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scripts personalizados -->
+    <script src="scripts.js"></script>
+</body>
+</html>
